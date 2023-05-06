@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人博客网页</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body background="/img/银杏.jpg"></body>
+    <div class="top">
+        <div class="top-left">
+            <h1>星星</h1>
+            <span>吃得苦，担的责，受的累，最后都会变成光，照亮前面的路</span>
+        </div>
+        <a class="top1" href="home page.html">首页</a>
+			<a class="top1" href="home page.html">首页</a>
+			<a class="top2" href="work.html"></a>
+			<a class="top3" href="小日常.html">Aurora的大学小日常</a>
+			<span class="top-right">黑凉的曙光</span>
+			<img src="/img/头像羊羊.jpg" title="头像" alt="头像" />
+			<span class="top-right1"><input type="submit" value="登录"></span>
+    </div>
+    <div class="main">
+        <div class="main-left">
+            <h1>欢迎来到Aurora的世界！<br/>Welcome to Aurora world!</h1>
+            <h3>今天也是努力奋斗的一天</h3>
+        </div>
+        <div class="main-center">
+            <div class="center-left">
+                <a href="head portrait.html" target="frame"><img src="/img/头像羊羊.jpg" alt="头像" title="头像" /></a>
+                <span id="name">黑凉的曙光<br/>市井长巷，聚拢来是烟火，摊开来是人间</span>
+            </div>
+        </div>
+        <div class="span">
+            <ul>
+                <li class="pane"><a href="personal file.html" target="frame">个人文档</a></li>
+                <li class="pane"><a href="work.html" target="frame">学习</a></li>
+                <li class="pane"><a href="photo album.html" target="frame">相册</a></li>
+                <li class="pane"><a href="manage board.html" target="frame">留言板</a></li>
+            </ul>
+    </div>
+    <div class="center">
+        <iframe src="personal file.html" width="850px" height="850px" frameborder="0" scrolling="yes" name="frame"></iframe>
+    </div>
+    <script>
+        var showtime2 = function () {
+            var nowtime = new Date();
+                endtime = new Date("2061/1/1");
+            var lefttime = endtime.getTime() - nowtime.getTime();
+                leftd = Math.floor(lefttime/(1000*60*60*24));  
+                lefth = Math.floor(lefttime/(1000*60*60)%24);  
+                leftm = Math.floor(lefttime/(1000*60)%60);  
+                lefts = Math.floor(lefttime/1000%60); 
+            return leftd + "&#22825;" + lefth + ":" + leftm + ":" + lefts;
+        }
+        var div = document.getElementById("showtime2");
+        setInterval (function () {
+            div.innerHTML = showtime2();
+        }, 1000);
+    </script>
+    <div class="time">
+        <script> 
+            document.write("<span id=time></span>") 
+            setInterval("time.innerText=new Date().toLocaleString()",1000)
+        </script> 
+    </div>
+</div>
+</body>
+</html>

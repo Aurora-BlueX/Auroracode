@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>个人头像</title>
+    <style>
+        body{
+            padding: 0px;
+            margin: 0px;
+            background-image: url("/img/相册背景.jpg");
+        }
+        #box4{
+            width: 100%;
+            height:55px;
+            background-color: rgb(94, 84, 84);
+            float: left;
+        }
+        #btn1{
+            border-radius: 15px;
+            opacity: 0.6;
+            position: relative;
+            left:85%;
+            top: 15px;
+        }
+        #box{width: 250px;
+            height: 350px;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top:0;
+            bottom: 0;
+            margin: auto;
+            transform-style: preserve-3d;
+            transform: rotateX(0deg) rotateY(0deg);
+            animation: move 20s linear infinite;
+           }
+           #box:hover {
+	        animation-play-state: paused; 
+	        cursor: pointer;
+        }
+        #box img{width: 250px;
+                 height: 350px;
+                 position: absolute;
+                 left: 0;
+                 top: 0;
+        }
+        #box img:nth-child(1){
+            transform: rotateY(0deg) translateZ(550px);}
+        #box img:nth-child(2){
+            transform: rotateY(40deg) translateZ(550px);}
+        #box img:nth-child(3){
+            transform: rotateY(80deg) translateZ(550px);}
+        #box img:nth-child(4){
+            transform: rotateY(120deg) translateZ(550px);}
+        #box img:nth-child(5){
+            transform: rotateY(160deg) translateZ(550px);}
+        #box img:nth-child(6){
+            transform: rotateY(200deg) translateZ(550px);}
+        #box img:nth-child(7){
+            transform: rotateY(240deg) translateZ(550px);}
+        #box img:nth-child(8){
+            transform: rotateY(280deg) translateZ(550px);}
+        #box img:nth-child(9){
+            transform: rotateY(320deg) translateZ(550px);}
+		@keyframes move {
+		    0%{transform: rotateX(0deg) rotateY(0deg);}
+		    25%{transform: rotateX(-10deg) rotateY(180deg);}
+		    50%{transform: rotateX(0deg) rotateY(360deg);}
+		    75%{transform: rotateX(10deg) rotateY(540deg);}
+		    100%{transform: rotateX(0deg) rotateY(720deg);}
+		
+		}
+    </style>
+
+</head>
+<body background="/img/相册背景.jpg">
+    <div id="box4">
+        <div>欢迎您登陆:
+        </div>
+    </div>
+    <div id="box5">
+            <div id="box">
+                    <img src="/头像/2fedf3b7f09742d0f567ec1739b140b1.jpg">
+                    <img src="/头像/6cd0d93f36ce0b8eaf2a106c56473d7a.jpg">
+                    <img src="/头像/74d0f34f3af99ba3b5b1ec05a2f0dd82.jpg">
+                    <img src="/头像/8c99393b511d774b972230c86ebfff4f.jpg">
+                    <img src="/头像/b0a65e95fe703ebf93e867a6b9bc032e.jpg">
+                    <img src="/头像/b9d0e72e36cd8a475bf9f2b7c9ca38aa.jpg">
+                    <img src="/头像/c1d26061743ac8e2a11ca574ba77fcd0.jpg">
+                    <img src="/头像/f0b06922ee7792d55251df6065b21795.jpg">
+                    <img src="/img/头像羊羊.jpg">
+                    <img src="/头像/1aa8cfdf6293f1dffdfa7bf157b55922.jpg">
+                    <img src="/头像/33107023a63f4d46c23e14eea423edf5.jpg">
+                    <img src="/头像/b72efee51d7d146b0a606e1874f40aea.jpg">
+                    <img src="/头像/dc4d9b574dc2b7b6eeb8f556ba38579f.jpg">
+                    <img src="/头像/c1d26061743ac8e2a11ca574ba77fcd0.jpg">
+                    <img src="/头像/74d0f34f3af99ba3b5b1ec05a2f0dd82.jpg">
+                    <img src="/头像/433c57d3c50502a907403d2053877c0e.jpg">
+                </div>
+    </div>
+    <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1377372171&auto=1&height=66"></iframe>
+</body>
+</html>

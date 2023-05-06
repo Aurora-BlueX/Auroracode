@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <title>个人爱好</title>
+    
+    </head>
+    
+    <body background="/img/日出.jpg">
+    
+        <div id="xz">
+    
+            <h3>选择你的爱好：</h3>
+    
+            <ul >
+    
+                <li id="fl0"><input type="checkbox">音乐</li>
+    
+                <li id="fl1"><input type="checkbox">登山</li>
+    
+                <li id="fl2"><input type="checkbox">游泳</li>
+    
+                <li id="fl3"><input type="checkbox">阅读</li>
+    
+                <li id="fl4"><input type="checkbox">打球</li>
+    
+                <li id="fl5"><input type="checkbox">跑步</li>
+    
+                <li id="fl6"><input type="checkbox">其他</li>
+    
+            </ul>
+    
+        </div>
+    
+        <hr>
+    
+        <div id="ck">
+    
+            <ul>
+    
+                <li><button οnclick="btn()">查看我选择的爱好</button></li>
+    
+            </ul>    
+    
+        </div>
+    
+        <div id="xs"></div>
+    
+    </body>
+    
+    </html>
+    
+    <script>
+    
+        function btn(){
+    
+    
+            var div_ = document.getElementById('xs');
+    
+    
+            var input_ = document.getElementsByTagName('input');
+    
+            if(input_[0].checked){
+    
+                var aihao_ = document.getElementById('fl0').firstElementChild.nextSibling.nodeValue;
+    
+                div_.innerHTML = aihao_;
+    
+            }
+    
+            if(input_[1].checked){
+    
+                var aihao1_ = document.getElementById('fl1').firstElementChild.nextSibling.nodeValue;
+    
+    
+                div_.innerHTML = div_ .innerHTML +'<br>'+ aihao1_;
+    
+            }
+    
+            if(input_[2].checked){
+    
+                var aihao2_ = document.getElementById('fl2').firstElementChild.nextSibling.nodeValue;
+    
+    
+                div_.innerHTML = div_ .innerHTML +'<br>'+ aihao2_;
+    
+            }
+    
+            if(input_[3].checked){
+    
+                var aihao3_ = document.getElementById('fl3').firstElementChild.nextSibling.nodeValue;
+    ; 
+                div_.innerHTML = div_ .innerHTML +'<br>'+ aihao3_;
+    
+            }
+    
+            if(input_[4].checked){
+    
+                var aihao4_ = document.getElementById('fl4').firstElementChild.nextSibling.nodeValue;
+
+                div_.innerHTML = div_ .innerHTML +'<br>'+ aihao4_;
+    
+            }
+    
+            if(input_[5].checked){
+    
+                var aihao5_ = document.getElementById('fl5').firstElementChild.nextSibling.nodeValue;
+    
+                div_.innerHTML = div_ .innerHTML +'<br>'+ aihao5_;
+    
+            }
+    
+            if(input_[6].checked){
+    
+                var aihao6_ = document.getElementById('fl6').firstElementChild.nextSibling.nodeValue;
+  
+    
+                div_.innerHTML = div_ .innerHTML +'<br>'+ aihao6_;
+    
+            }
+    
+        }
+    
+    </script>
+</body>
+</html>

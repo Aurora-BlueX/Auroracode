@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Aurora的大学小日常</title>
+        <style type="text/css">
+            .wrap{
+                position: relative;
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                width: 200px;
+                height: 200px;
+                margin: auto;
+            }
+            .cube{
+                width: 200px;
+                height: 200px;
+                margin: 0 auto;
+                transform-style: preserve-3d;
+                transform:rotateX(-30deg) rotateY(-80deg) ;
+                -webkit-animation:rotate 20s infinite;
+                animation-timing-function:linear ;    
+            }
+            @-webkit-keyframes rotate{
+                    from{transform: rotateX(0deg) rotateY(0deg);}
+                    to{transform: rotateX(360deg) rotateY(360deg);}
+                }
+            .cube div{
+                position: absolute;
+                width: 200px;
+                height: 200px;
+                opacity: 0.8;
+                transition: all.4s;
+            }
+            .pic{
+                width: 200px;
+                height: 200px;
+            }
+            .cube.out_front{
+                transform: rotateY(0deg) translateZ(100px);
+            }
+            .cube.out_back{
+                transform: translateZ(-100px) rotateY(180deg);
+            }
+            .cube.out_left{
+                transform: rotateY(90deg) translateZ(100px);
+            }
+            .cube.out_right{
+                transform: rotateY(-90deg)translateZ(100px);
+            }
+            .cube.out_top{
+                transform: rotateX(90deg)translateZ(100px);
+            }
+            .cube.out_bottom{
+                transform: rotateX(-90deg)translateZ(100px);
+            }
+            
+            
+             span{
+                display:block;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+                top: 50px;
+                left: 50px;
+            }    
+            .in_pic{
+                width: 100px;
+                height: 100px;
+            }
+            .in_front{
+                transform: rotateY(0deg) translateZ(50px) ;
+            }
+            .in_back{
+                transform:translateZ(-50px)  rotateY(180deg);
+            }
+            .in_left{
+                transform:rotateY(90deg) translateZ(50px);
+            }
+            .in_right{
+                transform:rotateY(-90deg) translateZ(50px);
+            }    
+            .in_top{
+                transform:rotateX(90deg) translateZ(50px);
+            }    
+            .in_bottom{
+                transform:rotateX(-90deg) translateZ(50px);
+            }    
+            
+            
+            
+            
+            
+            .cube:hover .out_front{
+                transform:rotateY(0deg) translateZ(200px);
+            }
+            .cube:hover .out_back{
+                transform: translateZ(-200px)rotateY(180deg);
+            }
+            .cube:hover .out_left{
+                transform:rotateY(90deg) translateZ(200px);
+            }
+            .cube:hover .out_right{
+                transform:rotateY(-90deg) translateZ(200px);
+            }
+            .cube:hover .out_top{
+                transform:rotateX(90deg) translateZ(200px);
+            }    
+            .cube:hover .out_bottom{
+                transform:rotateX(-90deg) translateZ(200px);
+            }
+            .hr{
+                text-align: center;
+        }
+        </style>
+    
+    </head>
+    <body background="/demo1117/img/绿色.jpg">
+        <h2 class="hr">相册</h2>
+        <hr>
+        <i style="font-family:'华文新魏';color:rgb(107, 9, 87);font-size: 80px;"> 
+            <p>想和你做彼此心事的靠山<br>
+                想和你永远好奇又贪玩<br>
+                原来友情真的可以一个像夏天一个像秋天<br>
+                陪伴彼此走过一年</p>
+        </i>
+        <div class="wrap">
+        <div class="cube">
+            <div class="out_front">
+                <img src="/img/8177bac32078a9102e99d567609c84cf.jpg" class="pic" >
+                </div>
+                <div class="out_back">
+                    <img src="/img/0ae6f42f3de78f8da52412a82874b2fe.jpg class="pic">
+                    </div>
+                    <div class="out_left">
+                        <img src="img/1db87dd86aabdb349dccdb439dcc36b7.jpg"class="pic" >
+                        </div>
+                        <div class="out_right">
+                            <img src="/img/360083dfa4ae360f567f74d7c7423fff.jpg"class="pic" >
+                        </div>
+                        <div class="out_top">
+                            <img src="/img/886bc6f3ff21c55c803bf7750fbef511.jpg"class="pic" >
+                        </div>
+                        <div class="out_bottom">
+                            <img src="/demo1117/img/6bfb99f04443cb4faf9bdd6bcb192714.jpg"class="pic" >
+                        </div>
+                        <span class="in_front">
+                            <img src="/img/5b9737980cef946a6d773f63e1194246.jpg"class="in_pic" >
+                        </span>
+                        <span class="in_back">
+                            <img src="/img/fe125278337d73669e1f0317bdf0f1d2.jpg"class="in_pic" >
+                        </span>
+                        <span class="in_left">
+                            <img src="/img/ee6ed6b298d6be2e9ce8c77eccba2b53.jpg"class="in_pic" >
+                        </span>
+                        <span class="in_right">
+                            <img src="/img/55ac075db288c375620ed43d5d86a6b1.jpg" class="in_pic">
+                        </span>
+                        <span class="in_top">
+                            <img src="/img/d01dd9f60966690bd52ef69a6bd3bcde.jpg" class="in_pic" >
+                        </span>
+                        <span class="in_bottom">
+                            <img src="/img/a6b729721ec758f496609c27b49d9659.jpg"class="in_pic" >
+                        </span>
+                        </div>
+                        </div>
+    </body>
+</html>
